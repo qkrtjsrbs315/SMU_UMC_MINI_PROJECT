@@ -40,6 +40,10 @@ app.use((err, req, res, next) => {
     .send(response(err.data));
 });
 
+app.use('api/login', loginRouters)
+app.use('api/signup', signupRouters)
+
+
 
 const connectDB = async () => {
   try {
