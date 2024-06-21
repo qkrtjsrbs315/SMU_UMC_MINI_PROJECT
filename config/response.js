@@ -1,11 +1,5 @@
-// response.js
-
-export const response = ({ isSuccess, code, message }, result) => {
-    return {
-        isSuccess: isSuccess,
-        code: code,
-        message: message,
-        result: result
-    }
-};
-
+export const response = (data) => ({
+    isSuccess: data.isSuccess,
+    code: data.code,
+    message: data.message 
+});
